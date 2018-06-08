@@ -57,7 +57,7 @@ class Song
     song
   end
   
-  def self.create_from_file(name)
+  def self.create_from_filename(name)
     name.slice!(".mp3")
     song_array = name.split(" - ")
     song = Song.new
