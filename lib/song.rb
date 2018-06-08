@@ -49,8 +49,10 @@ class Song
   end
   
   def self.new_from_filename(name)
-    name.split(" - ")
-    name.delete(".mp3")
+    song = name.delete(".mp3")
+    song_array = song.split(" - ")
+    song.name = song_array[0]
+    song.artist_name = song_array[1]
   end
 
   def save
