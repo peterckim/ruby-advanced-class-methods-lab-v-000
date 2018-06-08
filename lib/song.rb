@@ -50,6 +50,7 @@ class Song
   
   def self.new_from_filename(name)
     name.split(" - ")
+    name.delete
   end
 
   def save
