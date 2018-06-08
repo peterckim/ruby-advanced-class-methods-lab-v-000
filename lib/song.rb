@@ -43,6 +43,8 @@ class Song
       find_by_name(name)
     end
   end
+  
+  def self.alphabetical
 
   def save
     self.class.all << self
