@@ -52,8 +52,8 @@ class Song
     name.slice!(".mp3")
     song_array = name.split(" - ")
     song = Song.new
-    song.name = song_array[0]
-    song.artist_name = song_array[1]
+    song.name = song_array[1]
+    song.artist_name = song_array[0]
     song
   end
 
